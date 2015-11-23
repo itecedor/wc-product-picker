@@ -1,0 +1,4 @@
+ordereddict==1.1
+requests==2.8.1
+wheel==0.24.0
+WooCommerce==1.0.4
