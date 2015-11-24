@@ -10,7 +10,13 @@ Install dependancies:
 pip install -r requirements.txt
 ````
 
-Edit the config.ini file to put your WooCommerce URL, key and secret key in.
+Set 3 environment configs for your WC site:
+
+````
+export URL='SITE_URL'
+export CONSUMER_KEY='YOUR_KEY'
+export CONSUMER_SECRET='YOUR_SECRET'
+````
 
 Run program:
 
