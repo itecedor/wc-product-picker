@@ -1,11 +1,15 @@
 from woocommerce import API
 from urlparse import urlparse, parse_qs
 from random import randint
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
 
 wcapi = API(
-    url="https://gothamquilts.com",
-    consumer_key=KEY,
-    consumer_secret=SECRET
+    url=config['WC']['url'],
+    consumer_key=config['WC']['key'],
+    consumer_secret=config['WC']['secret']
 )
 
 # request first product page
